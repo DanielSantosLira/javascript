@@ -49,8 +49,8 @@ console.log(veiculo)
 console.log(typeof veiculo)
 
 let cliente = {
-    nome: 'daniel',
-    idade: 36
+  nome: 'daniel',
+  idade: 36
 }
 
 console.log(cliente)
@@ -78,4 +78,33 @@ console.log(10 > 3 || 10 > 15 || 10 > 8)//operador (OR) - com OU apenas umas
 //expressão, precisa ser verdadeiro par o resiltado ser verdadeiro
 
 console.log(!10 > 3)// operedor NÃO (NOT) - o operador NOT inverte o resultado da 
-   //expressão, se for verdadeiro ele inverte para falso e se for falso ele inverte para verdadeiro
+//expressão, se for verdadeiro ele inverte para falso e se for falso ele inverte para verdadeiro
+
+//alert("ola mundo")
+
+//document.write("<h3>olá Mundo</h3>")
+
+
+function Rosa() {
+  //inserir um valor em um elemento da página
+
+  document.getElementById('titulo').
+    innerHTML = 'Aula 02 js'
+  document.getElementById('texto').
+    innnerHTML = 'Vamos estudar intereção com DOM'
+
+  document.body.style.backgroundColor = 'violet'
+  document.body.style.color = 'white'
+
+  document.getElementById('titulo').style.color = 'yellow'
+
+  //pegar o valor de um elemento da página
+  let titulo = document.getElementById('titulo').
+    innerHTML
+  console.log(titulo)
+}
+function Laranja() {
+  document.body.style.backgroundColor = 'orangered'
+  document.body.style.color = 'lightblue'
+}
+Laranja()
